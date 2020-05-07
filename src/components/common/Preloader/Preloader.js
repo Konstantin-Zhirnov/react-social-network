@@ -6,7 +6,7 @@ import React from "react";
 
 let Preloader = (props) => {
     return (
-        <div className={styles.loaderBox}><img src={loaderImg}  className={styles.loader}/></div>
+        <div className={styles.loaderBox}><img alt="Preloader" src={loaderImg}  className={styles.loader}/></div>
         )
 }
 
