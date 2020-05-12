@@ -1,15 +1,27 @@
 .app-wrapper
   display: grid
-  grid-template-areas: 'h h' 'n c'
-  grid-template-rows: 80px 1fr
+  grid-template-areas: 'h h' 'n n' 'c c'
+  grid-template-rows: 90px 1fr
   grid-template-columns: 2fr 10fr
-  width: 80%
+  width: 100%
   margin: auto
-  grid-gap: 10px
 
 .app-wrapper-content
   grid-area: c
   background: rgba(100,93,21,.05)
-  box-shadow: 0 0 10px silver
+  padding-bottom: 50px
   img
     width: 100%
+
+
+@media only screen and (min-device-width: 768px)
+  .app-wrapper
+    grid-template-areas: 'h h' 'n c'
+    width: 80%
+    grid-gap: 10px
+
+  .app-wrapper-content
+    box-shadow: 0 0 10px silver
+    overflow: hidden
+    img
+      width: 100%

@@ -1,4 +1,4 @@
-import {addPostActionCreator} from "../../../redux/profileReducer";
+import {addLikeCountCreator, addPostActionCreator} from "../../../redux/profileReducer";
 import {connect} from "react-redux";
 import MyPosts from "./MyPosts";
 
@@ -6,13 +6,15 @@ import MyPosts from "./MyPosts";
 let mapStateToProps = (state) => {
     return {
         posts: state.profilePage.posts,
-        newPostText: state.profilePage.newPostText
+        newPostText: state.profilePage.newPostText,
+        profile: state.profilePage.profile
     }
 }
 
 let mapDispatchToProps = (dispatch) => {
     return {
-        addPost: (newPostText) => {dispatch(addPostActionCreator(newPostText))}
+        addPost: (newPostText) => {dispatch(addPostActionCreator(newPostText))},
+        setLikeCount: (postId) =>{dispatch(addLikeCountCreator(postId))}
     }
 }
 

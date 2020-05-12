@@ -27,5 +27,5 @@ export const Input = ({input, meta: {touched, error}, ...props}) => {
 }
 
 export const createField = (placeholder, name, component, validate, props, text = '') => (
-    <div><Field placeholder={placeholder} name={name} component={component} validate={validate} {...props} />{text}</div>
+    <div className={styles.formItem}><Field placeholder={placeholder} name={name} component={component} validate={validate} {...props} /><div className={styles.formText}><p>{text}</p></div></div>
 )

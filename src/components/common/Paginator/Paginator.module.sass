@@ -1,8 +1,39 @@
 .pangination
-  margin: 10px
-  pageNumber
-    padding: 2px
-    border: 1px solid green
+  margin: 10px 0
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  .pageNumber
+    padding: 4px 6px
+    margin: 0 3px
+    background: #645d15
+    color: white
+    cursor: pointer
+    border-radius: 2px
+    p
+      font-size: 11px
+      margin: 0
+      line-height: 20px
+    &:hover
+      box-shadow: 0 0 5px silver
   .selectedPage
     font-weight: bold
-    border-color: darkred
+    box-shadow: 0 0 3px silver
+    color: black
+  .button
+    background: #645d15
+    color: white
+    padding: 7px 8px
+    border: none
+    cursor: pointer
+    border-radius: 2px
+    width: 90%
+    margin: 15px 10px
+    &:hover
+      box-shadow: 0 0 5px silver
+
+
+@media only screen and (min-device-width: 450px)
+  .pangination .button
+    width: 60px
+    margin: 0 3px

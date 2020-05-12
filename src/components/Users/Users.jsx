@@ -10,7 +10,7 @@ let Users = ({currentPage, onPageChanged, totalItemsCount, portionSize, pageSize
         <div className={styles.Users}>
             <Paginator currentPage={currentPage} onPageChanged={onPageChanged} totalItemsCount={totalItemsCount}
                        pageSize={pageSize} portionSize={portionSize}/>
-            <div>
+            <div className={styles.UsersBox}>
                 {
                     users.map(u => <User user={u} key={u.id}
                                                followingInProgress={props.followingInProgress}

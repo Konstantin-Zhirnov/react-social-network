@@ -1,13 +1,26 @@
 .header
     grid-area: h
     background: #645d15
-    box-shadow: 0 0 10px silver
     padding: 10px 0 10px 20px
     position: relative
+    font-family: cursive
+    .headerText
+        margin: 0 10px 10px 0
     img
         width: 60px
     .loginBlock
         float: right
+        margin-right: 30px
+        div
+            text-align: center
+            button
+                background: black
+                color: white
+                padding: 5px 10px
         a
             color: white
             text-decoration: none
+
+@media only screen and (min-device-width: 768px)
+    .header
+        box-shadow: 0 0 10px silver
