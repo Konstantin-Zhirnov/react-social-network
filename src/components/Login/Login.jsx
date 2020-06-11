@@ -24,6 +24,11 @@ const LoginForm = ({handleSubmit, error, captchaUrl}) => {
             <div>
                 <button>Войти</button>
             </div>
+            <div style={{marginTop: 30}}>
+                <h2>Данные для входа:</h2>
+                <p><strong>Email: </strong>zhirnov-11.06@yandex.ru</p>
+                <p><strong>Password: </strong>18011948</p>
+            </div>
         </form>
     )
 }

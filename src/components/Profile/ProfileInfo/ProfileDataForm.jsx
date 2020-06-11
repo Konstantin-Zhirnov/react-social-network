@@ -29,7 +29,7 @@ const ProfileDataForm = ({handleSubmit, profile, error}) => {
             <div>
                 <b>Контакты: </b>{Object.keys(profile.contacts).map(key => {
                 return <div key={key} className={s.contact}>
-                    <b>{key}: </b> {createField(key, 'contacts.' + key, Input,[], {type: 'checkbox'})}
+                    <b>{key}: </b> {createField(key, 'contacts.' + key, Input,[], {type: 'text'})}
                 </div>
             })}
             </div>

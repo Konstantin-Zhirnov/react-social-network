@@ -18,7 +18,7 @@ import store from "./redux/reduxStore";
 
 class App extends React.Component {
     catchAllUnhandledErrors = (promiseRejectionEvent) => {
-        alert('Some error occured')
+        // alert('Some error occured')
     }
     componentDidMount() {
         this.props.initializeApp()
@@ -64,7 +64,7 @@ let AppContainer = compose(
 //     connect(mapStateToProps, {initializeApp}))(App)
 
 const MainApp = (props) => {
-    return <BrowserRouter basename={process.env.PUBLIC_URL}>
+    return <BrowserRouter>
         <Provider store={store}>
             <AppContainer/>
         </Provider>
